@@ -21,9 +21,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
@@ -42,7 +40,7 @@ const Navbar = () => {
           </p>
         </Link>
 
-        {/* Desktop Menu */}
+        {/* Desktop Navigation */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
@@ -68,18 +66,18 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Fullscreen Menu */}
+      {/* Mobile Navigation Menu */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center transition-all duration-300 ${
+        className={`fixed inset-0 bg-black bg-opacity-50 z-40 flex justify-end transition-all duration-300 ${
           toggle ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        <div className="bg-white w-4/5 max-w-md p-6 rounded-lg shadow-lg">
-          <ul className="flex flex-col gap-5 text-lg text-center">
+        <div className="bg-white w-2/3 max-w-sm h-full shadow-lg p-6">
+          <ul className="flex flex-col gap-5 text-lg mt-20">
             {navLinks.map((nav) => (
               <li
                 key={nav.id}
-                className="cursor-pointer hover:border-b-4 hover:border-black p-2"
+                className="cursor-pointer hover:border-b-4 hover:border-black"
                 onClick={() => {
                   setToggle(false);
                   setActive(nav.title);
