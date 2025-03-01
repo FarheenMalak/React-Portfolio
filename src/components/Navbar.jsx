@@ -34,7 +34,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <p className="text-black text-[18px] font-bold cursor-pointer flex">
             &nbsp;
             <span className="sm:block hidden">Portfolio.</span>
           </p>
@@ -46,8 +46,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === nav.title ? "text-black" : "text-gray-600"
+              } hover:text-black text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -60,24 +60,33 @@ const Navbar = () => {
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain"
+            className="w-[28px] h-[28px] object-contain text-black"
             onClick={() => setToggle(!toggle)}
           />
         </div>
       </div>
 
-      {/* Mobile Navigation Menu */}
+      {/* Mobile Fullscreen Navigation Menu */}
       <div
-        className={`fixed inset-0 bg-black bg-opacity-50 z-40 flex justify-end transition-all duration-300 ${
-          toggle ? "opacity-100 visible" : "opacity-0 invisible"
+        className={`fixed inset-0 bg-white z-40 flex items-center justify-end transition-all duration-300 ${
+          toggle ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="bg-white w-2/3 max-w-sm h-full shadow-lg p-6">
-          <ul className="flex flex-col gap-5 text-lg mt-20">
+        <div className="bg-white w-full h-screen p-6 flex flex-col items-center justify-center">
+          {/* Close Button */}
+          <button
+            className="absolute top-6 right-6 text-black text-3xl"
+            onClick={() => setToggle(false)}
+          >
+            ✕
+          </button>
+
+          {/* Navigation Links */}
+          <ul className="flex flex-col gap-6 text-black text-lg">
             {navLinks.map((nav) => (
               <li
                 key={nav.id}
-                className="cursor-pointer hover:border-b-4 hover:border-black"
+                className="cursor-pointer hover:border-b-2 hover:border-black pb-1"
                 onClick={() => {
                   setToggle(false);
                   setActive(nav.title);
