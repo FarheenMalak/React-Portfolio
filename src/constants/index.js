@@ -3,10 +3,7 @@ import {
   backend,
   creator,
   web,
-  javascript,
   typescript,
-  html,
-  css,
   reactjs,
   redux,
   tailwind,
@@ -28,7 +25,9 @@ import {
   project6,
 } from "../assets";
 import internshipPakistanLogo from "../assets/company/logo.png"; // ✅ Correct Import
-
+import html from "../assets/tech/html.png";
+import css from "../assets/tech/css.png";
+import javascript from "../assets/tech/javascript.png";
 export const navLinks = [
   {
     id: "about",
