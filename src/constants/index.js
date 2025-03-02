@@ -25,9 +25,6 @@ import {
   project6,
 } from "../assets";
 import internshipPakistanLogo from "../assets/company/logo.png"; // ✅ Correct Import
-import htmlLogo from "../assets/html.png";
-import cssLogo from "../assets/css.png";
-import javascriptLogo from "../assets/javascript.png";
 export const navLinks = [
   {
     id: "about",
@@ -63,18 +60,6 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: htmlLogo,
-  },
-  {
-    name: "CSS 3",
-    icon: cssLogo,
-  },
-  {
-    name: "JavaScript",
-    icon: javascriptLogo,
-  },
   {
     name: "TypeScript",
     icon: typescript,
