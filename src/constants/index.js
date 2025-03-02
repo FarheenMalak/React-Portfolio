@@ -25,9 +25,9 @@ import {
   project6,
 } from "../assets";
 import internshipPakistanLogo from "../assets/company/logo.png"; // ✅ Correct Import
-import htmlLogo from "../assets/tech/html.png";
-import cssLogo from "../assets/tech/css.png";
-import javascriptLogo from "../assets/tech/javascript.png";
+import htmlLogo from "../assets/html.png";
+import cssLogo from "../assets/css.png";
+import javascriptLogo from "../assets/javascript.png";
 export const navLinks = [
   {
     id: "about",
