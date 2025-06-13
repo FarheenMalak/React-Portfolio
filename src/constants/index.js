@@ -3,7 +3,10 @@ import {
   backend,
   creator,
   web,
+  javascript,
   typescript,
+  html,
+  css,
   reactjs,
   redux,
   tailwind,
@@ -24,7 +27,9 @@ import {
   project5,
   project6,
 } from "../assets";
-import internshipPakistanLogo from "../assets/company/logo.png"; // ✅ Correct Import
+import internshipPakistanLogo from "../assets/company/logo.png"; 
+import pluralDyanmicsLogo from "../assets/company/plural-dynamics.jpg"; 
+
 export const navLinks = [
   {
     id: "about",
@@ -60,6 +65,18 @@ const services = [
 ];
 
 const technologies = [
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
+  },
   {
     name: "TypeScript",
     icon: typescript,
@@ -102,13 +119,25 @@ const experiences = [
   {
     title: "Front End Developer Intern",
     company_name: "Internship Pakistan",
-    icon: internshipPakistanLogo,  // Replace with correct icon
+    icon: internshipPakistanLogo, 
     iconBg: "#E6DEDD",
     date: "Jan 2025 - March 2025 (2 Months Remote)",
     points: [
       "Worked on real-world projects using React.js and Bootstrap.",
       "Implemented dynamic UI components for better interactivity.",
       "Ensured cross-browser compatibility and improved page speed.",
+    ],
+  },
+    {
+    title: "React.Js Intern",
+    company_name: "Plural Dynamics",
+    icon: pluralDyanmicsLogo, 
+    iconBg: "#E6DEDD",
+    date: "May 2025 - Current (3 Months Remote)",
+    points: [
+      "Worked on real-world projects using React.js.",
+      "Collaborated with senior developers to enhance web application performance.",
+      "Ensured cross-browser compatibility and improved page design.",
     ],
   },
 ];
@@ -160,7 +189,7 @@ const projects = [
       },
     ],
     image: carrent,
-    live_demo_link: "https://farheenmalak.github.io/Kababjees-Replica/",  // ✅ New Live Link
+    live_demo_link: "https://farheenmalak.github.io/Kababjees-Replica/", 
   },
   {
     name: "Magic Spoon Clone",
@@ -198,24 +227,24 @@ const projects = [
       },
     ],
     image: tripguide,
-    live_demo_link: "https://microsoft-clone-delta-ashen.vercel.app/",  // ✅ New Live Link
+    live_demo_link: "https://microsoft-clone-delta-ashen.vercel.app/", 
   },
   {
-    name: "Creative Website",
+    name: "Hotelook Website",
     description:
-      "An innovative portfolio website with a visually appealing layout, smooth animations, and a user-friendly interface, highlighting creativity and modern web design.",
+      "An innovative hotel website with a visually appealing layout, smooth animations, and a user-friendly interface, highlighting creativity and modern web design.",
     tags: [
       {
-        name: "html",
+        name: "react.js",
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind css",
         color: "green-text-gradient",
       },
     ],
     image: project4,
-    live_demo_link: "https://farheenmalak.github.io/Freelance-Project/",  // ✅ New Live Link
+    live_demo_link: "https://hotel-management-website-three.vercel.app/",  
   },
   {
     name: "Travel Tracker",
@@ -236,28 +265,28 @@ const projects = [
       },
     ],
     image: project5,
-    live_demo_link: "https://farheenmalak.github.io/Js-Project/",  // ✅ New Live Link
+    live_demo_link: "https://farheenmalak.github.io/Js-Project/",  
   },
   {
-    name: "Snake Game",
+    name: "Task Manager",
     description:
-      "A classic Snake game built with HTML, CSS, and JavaScript, featuring smooth controls, real-time score tracking, and an engaging retro gaming experience.",
+      "A classic task manager built with react and firebase, featuring smooth controls, real-time task tracking, creating and editing tasks.",
     tags: [
       {
-        name: "html",
+        name: "react.js",
         color: "blue-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind css",
         color: "green-text-gradient",
       },
       {
-        name: "javascript",
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
     image: project6,
-    live_demo_link: "https://farheenmalak.github.io/Snake-Game/",  // ✅ New Live Link
+    live_demo_link: "https://task-manager-sigma-swart.vercel.app/", 
   },
 ];
 
